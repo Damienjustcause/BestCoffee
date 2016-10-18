@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.dmedellin3797.bestcoffee.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SterBucks"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#51a74f"
+        android:id="@+id/Sterbucks"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+       android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:id="@+id/Amount"
+        />
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:onClick="increment"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/quantity_text_view"/>
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:onClick="decrement"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+       android:text="Price"
+       android:textSize="20sp"
+       android:textAllCaps="true"
+       android:id="@+id/Price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/price_text_view"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+        android:text="Order"
+        android:onClick="submitOrder"
+        android:layout_gravity="center_horizontal"
+        />
+    <ImageView
+        android:layout_width="483dp"
+        android:layout_height="315dp"
+        android:src="@drawable/coffeebeans23"
+        android:scaleType = "centerCrop"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView"/>
+</LinearLayout>
